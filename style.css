@@ -1,0 +1,449 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,700;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body,html{
+    font-family: "Poppins", sans-serif;
+    width: 100%;
+    overflow-x: hidden;
+}
+:root{
+    --Pink: hsl(322, 100%, 66%);
+    --veryPaleCyan: hsl(193, 100%, 96%);
+    --VeryDarkCyan: hsl(192, 100%, 9%);
+    --grayishBlue: hsl(208, 11%, 55%);
+}
+/* start header */
+#home{
+    background-image: url(images/bg-hero-desktop.svg);
+    background-color: var(--veryPaleCyan);
+    height: 100vh;
+}
+#home .container{
+    margin: 0px 40px;
+}
+#home .container .navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 30px;
+}
+#home .container .navbar img{
+    width: 150px;
+}
+#home .container .navbar button{
+    background-color:#fff;
+    color: #000;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 30px;
+    box-shadow: 0px 0px 1px 1px rgb(233, 233, 233);
+    cursor: pointer;
+}
+#home .container .home-content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 50px;
+    margin: 40px 20px;
+}
+#home .container .home-content .info-right img{
+    width:700px;
+}
+#home .container .home-content .info-left h1{
+    font-size: 40px;
+    font-weight: 800;
+}
+#home .container .home-content .info-left p{
+    margin-top: 20px;
+}
+#home .container .home-content .info-left button{
+    margin-top: 20px;
+    background-color: var(--Pink);
+    color: #fff;
+    padding: 14px 40px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+
+/* end header */
+/* start grow */
+#grow .container{
+    margin:150px 40px ;
+}
+#grow .container .grow-content{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 0px 5px 2px rgb(233, 233, 233);
+    border-radius: 10px;
+    border: 1px solid #fff;
+    padding:50px 30px;
+    column-gap: 130px;
+}
+#grow .container .grow-content .grow-right img{
+    width: 500px;
+}
+#grow .container .grow-content .grow-left h1{
+    margin: 0px 0px 30px 50px;
+}
+#grow .container .grow-content .grow-left p{
+    margin: 0px 0px 0px 50px;
+    font-size: 18px;
+    opacity: 0.8;
+}
+
+/* end grow */
+/* start flow */
+#flow .container{
+    margin:150px 40px ;
+}
+#flow .container .flow-content{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 0px 5px 1px rgb(233, 233, 233);
+    border-radius: 10px;
+    padding:50px 30px;
+    column-gap: 130px;
+}
+#flow .container .flow-content .flow-left img{
+    width: 500px;
+}
+#flow .container .flow-content .flow-right h1{
+    margin: 0px 50px 30px 0px;
+}
+#flow .container .flow-content .flow-right p{
+    margin: 0px 50px 0px 0px;
+    font-size: 18px;
+    opacity: 0.8;
+}
+
+/* end flow */
+/* start users */
+#users .container{
+    margin:100px 40px 250px ;
+}
+#users .container .users-content{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 0px 5px 1px rgb(233, 233, 233);
+    border-radius: 20px;
+    padding:50px 30px;
+    column-gap: 130px;
+}
+#users .container .users-content .users-right img{
+    width: 500px;
+}
+#users .container .users-content .users-left h1{
+    margin: 0px 0px 30px 50px;
+}
+#users .container .users-content .users-left p{
+    margin: 0px 0px 0px 50px;
+    font-size: 18px;
+    opacity: 0.8;
+}
+
+/* end users */
+/* start communty */
+
+#over .container .community-about{
+    box-shadow: 0px 0px 1px 1px rgb(233, 233, 233);
+    width: 600px;
+    padding: 40px 40px;
+    text-align: center;
+    position:absolute;
+    left: 23.5%;
+    bottom:85%;
+    background-color: #fff;
+    border-radius: 10px;
+}
+#over .container .community-about h2{
+    padding-bottom: 20px;
+}
+
+#over .container .community-about button{
+    background-color: var(--Pink);
+    color: #fff;
+    padding:20px 0px;
+    width: 300px;
+    margin: 30px 0px 20;
+    border: none;
+    border-radius: 20px;
+    box-shadow: 0px 0px 1px 1px rgb(233, 233, 233);
+}
+
+/* end communty */
+/* start footer */
+
+#foot{
+    background-color: var(--VeryDarkCyan);
+    position: relative;
+}
+#foot .container{
+    padding: 50px 50px 20px ;
+}
+#foot .container .row{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    color: #fff;
+}
+
+#foot .container  img{
+    width: 150px;
+}
+#foot .container .row .col-1 ul{
+    list-style: none;
+}
+#foot .container .row .col-1 ul li{
+    display: flex;
+   align-items:flex-start;
+    justify-content:flex-start;
+    margin: 20px 0px;
+}
+#foot .container .row .col-1 ul li img{
+   width: 15px;
+   height: 15px;
+}
+#foot .container .row .col-1 ul li p{
+   font-size: 12px;
+   margin-left: 20px;
+   opacity: 0.8;
+}
+#foot .container .row .col-2{
+    margin: 20px  0px  0px 140px;
+}
+
+#foot .container .row .col-2 ul{
+    list-style: none;
+    opacity: 0.8;
+}
+#foot .container .row .col-3 {
+    margin: 20px  0px  0px 100px;
+}
+#foot .container .row .col-3 ul{
+    list-style: none;
+    opacity: 0.8;
+}
+#foot .container .row .col-4 {
+    margin: 20px  100px  150px 100px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+#foot .container .row .col-4 a{
+    color: #fff;
+    margin-left: 40px;
+    font-size: 15px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    padding-top: 2px;
+}
+.copy-right{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.copy-right p{
+    margin:0px 0px 50px 100px;
+    font-size: 12px;
+}
+
+
+
+/* end footer */
+/* start-media query */
+/* start-desktop */
+@media(max-width:1440px){
+    /* start-home */
+    #home{
+        height: 85vh;
+    }
+    /* end-home */
+    /* start-grow */
+    #grow .container .grow-content{
+        box-shadow: 0px 0px 1px 1px rgb(233, 233, 233);
+    }
+    /* end-grow */
+    /* start-flow */
+    #flow .container .flow-content{
+        box-shadow: 0px 0px 1px 1px rgb(233, 233, 233);
+        border-radius: 10px;
+    }
+    /* end-flow */
+    /* start-users */
+    #users .container .users-content{
+        box-shadow: 0px 0px 5px 1px rgb(233, 233, 233);
+        border-radius: 20px;
+    }
+    /* end-users */
+    /* start-over */
+    #over .container .community-about{
+        box-shadow: 0px 0px 1px  1px rgb(233, 233, 233);
+        border-radius: 20px;
+    }
+    #over .container .community-about{
+         box-shadow: 0px 0px 1px 1px rgb(233, 233, 233);
+         width: 600px;
+        padding: 40px 40px 80px 40px;
+        position:absolute;
+        left: 29%;
+         bottom:85%;
+    }
+    /* end-over */
+}
+/* end-desktop */
+/* start-mobile */
+@media(max-width:375px){
+    /* start-home */
+    #home{
+        height: 110vh;
+    }
+
+    #home .container .navbar img{
+        width: 100px;
+    }
+    #home .container .navbar button{
+        padding: 5px 15px;
+        font-weight: bold;
+    }
+    #home .container .home-content{
+        display: flex;
+        flex-direction: column;
+        margin: 40px 20px;
+        text-align: center;
+    }
+    #home .container .home-content .info-right img{
+        width:300px;
+    }
+    #home .container .home-content .info-left h1{
+        font-size: 20px;
+        font-weight: 600;
+    }
+    #home .container .home-content .info-left p{
+       font-size: 12.5px;
+       font-weight:300;
+    }
+    #home .container .home-content .info-left button{
+        margin: 40px 0px;
+        padding: 12px 40px;
+    }
+    /* end-home */
+    /* start grow */
+    #grow .container .grow-content{
+        display: flex;
+        flex-direction:column-reverse;
+        text-align: center;
+    }
+    #grow .container .grow-content .grow-right img{
+        width: 200px;
+    }
+    #grow .container .grow-content .grow-left h1{
+       font-size: 20px;
+       margin: 40px 20px 0px 0px;
+       font-weight: 600;
+    }
+    #grow .container .grow-content .grow-left p{
+        margin: 20px 20px 0px 0px;
+        font-size: 12px;
+    }
+    /* end-grow */
+    /* start-flow */
+    #flow .container .flow-content{
+        display: flex;
+        flex-direction:column;
+        text-align: center;
+    }
+    #flow .container .flow-content .flow-left img{
+        width: 200px;
+    }
+    #flow .container .flow-content .flow-right h1{
+        font-size: 20px;
+        margin: 40px 20px 0px 0px;
+        font-weight: 600;
+    }
+    #flow .container .flow-content .flow-right p{
+        margin: 20px 20px 0px 0px;
+        font-size: 14px;
+    }
+    /* end-flow */
+    /* start-users */
+    #users .container .users-content{
+        display: flex;
+        flex-direction:column-reverse;
+        text-align: center;
+    }
+    #users .container .users-content .users-right img{
+        width: 200px;
+    }
+    #users .container .users-content .users-left h1{
+        font-size: 20px;
+        margin: 40px 20px 0px 0px;
+        font-weight: 600;
+    }
+    
+    #users .container .users-content .users-left p{
+        margin: 20px 20px 0px 0px;
+        font-size: 10px;
+    }
+    /* end-users */
+    /* start-over */
+    #over .container .community-about{
+        width:340px;
+        padding: 40px 40px;
+        position:absolute;
+        left: 5%;
+        bottom:93%;
+    }
+    #over .container .community-about h2{
+        font-size: 15px;
+        font-weight:bolder;
+    }
+    #over .container .community-about button{
+        padding:10px 0px;
+        width: 200px;
+        margin: 30px 0px 20px;
+    }
+    /* end-over */
+    /* start-foot */
+    #foot .container .row{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+    }
+    #foot .container .row .col-2{
+        margin: 20px  180px  0px 0px;
+    }
+    #foot .container .row .col-3 {
+        margin: 20px  180px  0px 0px;
+    }
+    #foot .container .row .col-4 {
+        margin: 40px  0px  0px 0px;
+    }
+    #foot .container .row .col-4 a{
+        margin-left:20px;
+    }
+    .copy-right p{
+        margin:20px 0px 50px 50px;
+        text-wrap:nowrap ;
+        font-size: 10px;
+        opacity: 0.8; 
+    }
+     /* end-foot */
+}
+/* end-mobile */
+/* end-media query */
